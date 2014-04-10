@@ -2,6 +2,7 @@
 a = ['a', 'b', 10, 1000]
 
 # Sublists, Indexes of List
+# Slice range notation generates shallow copy of list
 
 simple_list = ['first', 'second', "third"]
 print 'simple list: ' + str(simple_list)
