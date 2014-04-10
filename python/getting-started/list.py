@@ -44,3 +44,37 @@ print 'list with removed second element ' + str(simple_list)
 # create nested list
 nested_list = ['first', ['first_nested', 'second nested'], 'third']
 print nested_list
+
+# list as a stack (lifo)
+stack = []
+stack.append(1)
+stack.append(2)
+print stack.pop()
+print stack.pop()
+
+# filter function example
+def even_num(x):
+	return x % 2
+
+print filter(even_num, range(1,10))
+print filter(lambda x: x%2, range(1,10))
+
+# range function example
+def cube(x):
+	return x*x*x
+
+print map(cube, range(1,10))
+print map(lambda x:x*x*x, range(1,10))
+
+def sum_numbers(a,b):
+	return a+b
+
+# reduce function example
+print reduce(sum_numbers, range(1,10))
+print reduce(lambda a,b: a+b, range(1,10))
+
+# remove item from list
+list_with_item_to_remove = [1,2,3,4]
+print str(list_with_item_to_remove)
+del list_with_item_to_remove[0]
+print str(list_with_item_to_remove)
