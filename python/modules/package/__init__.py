@@ -1,0 +1,1 @@
+print 'package folder init'
